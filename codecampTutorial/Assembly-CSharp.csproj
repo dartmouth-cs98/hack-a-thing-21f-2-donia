@@ -38,6 +38,9 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\LearningHowToProgram.cs" />
+     <Compile Include="Assets\Scripts\Player.cs" />
+     <Compile Include="Assets\Scripts\Warrior.cs" />
+     <Compile Include="Assets\Scripts\LearningHowToProgram2.cs" />
      <None Include="Assets\Monster Chase Assets\Fonts\font info.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.18f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
@@ -630,6 +633,9 @@
     <Reference Include="Unity.TextMeshPro">
         <HintPath>/Users/doniatung1/Documents/cs98/hack-a-thing-21f-2-donia/codecampTutorial/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+        <HintPath>/Users/doniatung1/Documents/cs98/hack-a-thing-21f-2-donia/codecampTutorial/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
         <HintPath>/Users/doniatung1/Documents/cs98/hack-a-thing-21f-2-donia/codecampTutorial/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -641,9 +647,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
         <HintPath>/Users/doniatung1/Documents/cs98/hack-a-thing-21f-2-donia/codecampTutorial/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
-    </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-        <HintPath>/Users/doniatung1/Documents/cs98/hack-a-thing-21f-2-donia/codecampTutorial/Library/ScriptAssemblies/Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
