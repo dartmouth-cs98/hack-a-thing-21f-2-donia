@@ -27,22 +27,25 @@ public class MonsterSpawner : MonoBehaviour
 
     IEnumerator SpawnMonsters() // can be called over an interval of time
     {
-        yield return new WaitForSeconds(Random.Range(1, 5)); 
+        while (true) {
+             yield return new WaitForSeconds(Random.Range(1, 5)); 
 
-        randomIndex = Random.Range(0, monsterReference.Length); 
-        randomSide = Random.Range(0, 2); 
+            randomIndex = Random.Range(0, monsterReference.Length); 
+            randomSide = Random.Range(0, 2); 
 
-        spawnedMonster = Instantiate(monsterReference[randomIndex]); 
+            spawnedMonster = Instantiate(monsterReference[randomIndex]); 
 
-        // left
-        if (randomSide == 0) {
-            spawnedMonster.transform.position = leftPos.position; 
-            spawnedMonster.GetComponent<Monster>().speed = Random.Range(4, 10); 
-        } else { // right
-            spawnedMonster.transform.position = rightPos.position; 
-            spawnedMonster.GetComponent<Monster>().speed = -Random.Range(4, 10); 
-            spawnedMonster.transform.localScale = new Vector3(-1f, 1f, 1f); 
+            // left
+            if (randomSide == 0) {
+                spawnedMonster.transform.position = leftPos.position; 
+                spawnedMonster.GetComponent<Monster>().speed = Random.Range(4, 10); 
+            } else { // right
+                spawnedMonster.transform.position = rightPos.position; 
+                spawnedMonster.GetComponent<Monster>().speed = -Random.Range(4, 10); 
+                spawnedMonster.transform.localScale = new Vector3(-1f, 1f, 1f); 
+            }
         }
+       
     }
 
     // Update is called once per frame

@@ -21,6 +21,10 @@ public class CameraFollow : MonoBehaviour
     // Update is called once per frame
     void LateUpdate() // called every frame after the updates in reg. Update 
     {
+
+        if (! player)
+            return;
+
         tempPos = transform.position; 
         tempPos.x = player.position.x; 
 

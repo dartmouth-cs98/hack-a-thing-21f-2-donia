@@ -11,12 +11,12 @@ GameObject:
   - component: {fileID: 6453000296759739795}
   - component: {fileID: 5983822606162914942}
   - component: {fileID: 6034605842773871539}
-  - component: {fileID: 1725030839373901814}
+  - component: {fileID: -4711896938693618119}
   - component: {fileID: 953846649535326590}
   - component: {fileID: 6985542696766854237}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Red Zombie
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -74,7 +74,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1681455733
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 5023289697677887148, guid: 84eed0b73263549a4a357317d9d94a76, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -105,8 +105,8 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!61 &1725030839373901814
-BoxCollider2D:
+--- !u!70 &-4711896938693618119
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -118,19 +118,9 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.16220641, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.29, y: 2.11}
-    newSize: {x: 1.29, y: 2.11}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.96558714, y: 2.11}
-  m_EdgeRadius: 0
+  m_Offset: {x: -0.15892792, y: 0.028464586}
+  m_Size: {x: 0.80135727, y: 2.0530705}
+  m_Direction: 0
 --- !u!50 &953846649535326590
 Rigidbody2D:
   serializedVersion: 4
