@@ -46,6 +46,7 @@ public class GameManager : MonoBehaviour
     void OnLevelFinishedLoading(Scene scene, LoadSceneMode mode)
     {
         if (scene.name == "Gameplay") {
+            // Debug.Log("player in level loading " + CharIndex);
             Instantiate(characters[CharIndex]);
         }
     }
